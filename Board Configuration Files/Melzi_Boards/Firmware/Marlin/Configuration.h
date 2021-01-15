@@ -36,7 +36,7 @@
 //#define CR10_S4
 //#define CR10_S5
 //#define ENDER2
-//#define ENDER3
+#define ENDER3
 //#define ENDER5
 
 // If you are using our EZOut V1/V2 (connects to LCD header) filament sensor kit please follow the install guide
@@ -177,7 +177,7 @@
 // If you have a hotend and thermistor capable of over 290C you can set the max temp value below.
 // Setting this higher than 290C on a stock or traditional thermistor will damage it. Refer to your thermistor documentation to see what max temp is.
 //#define HIGH_TEMP_THERMISTOR
-#define HIGH_TEMP_THERMISTOR_TEMP 350
+#define HIGH_TEMP_THERMISTOR_TEMP 255
 
 // BED THERMISTOR SETTINGS -------------------------
 
@@ -204,7 +204,7 @@
 //#define USER_PRINTER_NAME "CHANGE ME"
 
 // If your printer is homing to the endstops hard uncomment this to change the homing speed/divisor to make it less aggressive.
-//#define SLOWER_HOMING
+#define SLOWER_HOMING
 
 //===========================================================================
 //****************** COMMUNITY REQUESTED FEATURES ***************************
@@ -254,7 +254,7 @@
 // Due to space constraints on these boards, enabling the POWER_LOSS_RECOVERY will also disable ARC_SUPPORT automatically
 //
 // NOTE: This feature causes excessive wear on your SD card.
-//#define POWER_LOSS_RECOVERY
+#define POWER_LOSS_RECOVERY
 
 // ARC Support Override ----------------------------
 // Arc support is enabled by default on all builds but this takes up extra space. If you get compile errors due to the size being too large when enabling other options, then disable ARC_SUPPORT
