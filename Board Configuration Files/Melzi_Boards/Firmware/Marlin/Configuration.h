@@ -42,7 +42,7 @@
 // If you are using our EZOut V1/V2 (connects to LCD header) filament sensor kit please follow the install guide
 // and then uncomment the #define EZOUT_ENABLE line below.
 // Do NOT ever connect our filament sensor without the supplied adapter board.
-//#define EZOUT_ENABLE
+#define EZOUT_ENABLE
 
 // EZABL Probe Mounts
 //#define CR10_OEM
@@ -720,13 +720,13 @@
     // After a runout is detected, continue printing this length of filament
     // before executing the runout script. Useful for a sensor at the end of
     // a feed tube. Requires 4 bytes SRAM per sensor, plus 4 bytes overhead.
-    //#define FILAMENT_RUNOUT_DISTANCE_MM 25
+    #define FILAMENT_RUNOUT_DISTANCE_MM 7
 
     #ifdef FILAMENT_RUNOUT_DISTANCE_MM
       // Enable this option to use an encoder disc that toggles the runout pin
       // as the filament moves. (Be sure to set FILAMENT_RUNOUT_DISTANCE_MM
       // large enough to avoid false positives.)
-      //#define FILAMENT_MOTION_SENSOR
+      #define FILAMENT_MOTION_SENSOR
     #endif
   #endif
 #endif
